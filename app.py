@@ -7,8 +7,6 @@ from header import *
 # Create the header
 create_header()
 
-if 'remaining_time' not in st.session_state:
-  st.session_state['remaining_time'] = 0
 
 days = st.number_input('Days:')
 hours = st.number_input('Hours:')
