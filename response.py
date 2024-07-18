@@ -12,9 +12,9 @@ def countdown(duration_days, duration_hours, duration_minutes):
 
   while time.time() < end_time:
     remaining_time = int(end_time - time.time())
-    days, remainder = divmod(remaining_time, 86400)
-    hours, remainder = divmod(remaining_time, 3600)
-    mins, secs = divmod(remainder, 60)
+    days, remainder1 = divmod(remaining_time, 86400)
+    hours, remainder2 = divmod(remainder1, 3600)
+    mins, secs = divmod(remainder2, 60)
     timer = '{:02d}:{:02d}:{:02d}:{:02d}'.format(days,hours, mins, secs)
 
     timer_placeholder.title(timer)
