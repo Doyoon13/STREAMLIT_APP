@@ -12,7 +12,7 @@ hours = st.number_input('Hours:')
 minutes = st.number_input('Minutes:')
 if st.button('Start Timer'):
     countdown(days, hours, minutes)
-elif st.button('Reset Timer'):
+if st.button('Reset Timer'):
     countdown(0,0,0)
 
 title_placeholder = st.empty()
