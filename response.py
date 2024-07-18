@@ -1,4 +1,3 @@
-%%writefile response.py
 import time
 import streamlit as st
 import librosa
