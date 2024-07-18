@@ -19,4 +19,4 @@ def countdown(duration_hours, duration_minutes):
     time.sleep(1)
 
   timer_placeholder.title("Time's up!")
-  audio('assets/content/cyber-alarms-synthesized-116358.mp3',autoplay= True)
+  st.audio('assets/content/cyber-alarms-synthesized-116358.mp3',autoplay= True)
