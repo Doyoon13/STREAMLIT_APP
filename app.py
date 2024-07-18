@@ -17,12 +17,4 @@ title_placeholder = st.empty()
 
 Timer_placeholder = st.empty()
 
-@st.cache
-def count_visitor():
- conn = sqlite3.connect("/path/to/database.db")
- cur = conn.cursor()
- cur.execute("UPDATE name_of_table SET total_visitors = total_visitors + " + str(1))
- conn.commit()
- conn.close()
 
-count_visitor()
