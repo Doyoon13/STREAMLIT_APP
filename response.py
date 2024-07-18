@@ -21,5 +21,5 @@ def countdown(duration_hours, duration_minutes):
 
   timer_placeholder.title("Time's up!")
   audio_path = '/content/mixkit-vintage-warning-alarm-990.wav'
-  librosa.load(audio_path)
+  librosa.load(audio_path, autoplay = true)
   
