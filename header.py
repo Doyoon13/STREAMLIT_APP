@@ -1,5 +1,5 @@
 import streamlit as st
-[theme]
+
 font="sans serif"
 
 def create_header():
