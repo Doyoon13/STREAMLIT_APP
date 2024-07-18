@@ -11,9 +11,10 @@ def countdown(duration_hours, duration_minutes):
 
   while time.time() < end_time:
     remaining_time = int(end_time - time.time())
+    days, remainder = divmod(remaining_time, 86400)
     hours, remainder = divmod(remaining_time, 3600)
     mins, secs = divmod(remainder, 60)
-    timer = '{:02d}:{:02d}:{:02d}'.format(hours, mins, secs)
+    timer = '{:02d}:{:02d}:{:02d}:{:02d}'.format(days,hours, mins, secs)
 
     timer_placeholder.title(timer)
 
@@ -22,6 +23,3 @@ def countdown(duration_hours, duration_minutes):
   audio_path = 'mixkit-vintage-warning-alarm-990.wav'
   st.audio(audio_path, autoplay = True)
   timer_placeholder.title("Time's up!")
-  
-  
-  
