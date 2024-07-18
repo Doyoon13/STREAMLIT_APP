@@ -1,6 +1,6 @@
 import time
 import streamlit as st
-import librosa
+
 
 def countdown(duration_hours, duration_minutes):
   total_seconds = duration_hours * 3600 + duration_minutes * 60
@@ -18,7 +18,10 @@ def countdown(duration_hours, duration_minutes):
     timer_placeholder.title(timer)
 
     time.sleep(1)
-
-  timer_placeholder.title("Time's up!")
-  audio_path = 'mixkit-vintage-warning-alarm-990.wav'
+  
+  audio_path = '/content/mixkit-vintage-warning-alarm-990.wav'
   st.audio(audio_path, autoplay = True)
+  timer_placeholder.title("Time's up!")
+  
+  
+  
