@@ -10,10 +10,12 @@ create_header()
 days = st.number_input('Days:')
 hours = st.number_input('Hours:')
 minutes = st.number_input('Minutes:')
-if st.button('Start Timer'):
-    countdown(days, hours, minutes)
 if st.button('Reset Timer'):
     countdown(0,0,0)
+    
+if st.button('Start Timer'):
+    countdown(days, hours, minutes)
+
 
 title_placeholder = st.empty()
 
