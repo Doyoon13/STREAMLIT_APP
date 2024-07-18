@@ -19,4 +19,4 @@ def countdown(duration_hours, duration_minutes):
     time.sleep(1)
 
   timer_placeholder.title("Time's up!")
-  st.audio('/content/mixkit-vintage-warning-alarm-990.wav',autoplay= True)
+  
