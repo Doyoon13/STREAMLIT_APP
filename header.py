@@ -1,4 +1,6 @@
 import streamlit as st
+[theme]
+font="sans serif"
 
 def create_header():
   st.title(":red[Timer]")     # YOUR CODE HERE
