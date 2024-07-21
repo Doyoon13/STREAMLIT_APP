@@ -18,7 +18,7 @@ def countdown(duration_days, duration_hours, duration_minutes):
     timer = '{:02d}:{:02d}:{:02d}:{:02d}'.format(days,hours, mins, secs)
 
     timer_placeholder.title(timer)
-    return 0
+    time.sleep(0)
     time.sleep(1)
     
   
