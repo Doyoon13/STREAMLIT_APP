@@ -1,14 +1,11 @@
 import time
 import streamlit as st
 
-
+timer_placeholder = st.empty()
 def countdown(duration_days, duration_hours, duration_minutes):
  total_seconds = duration_days * 86400 + duration_hours * 3600 + duration_minutes * 60
  start_time = time.time()
  end_time = start_time + total_seconds
-
-timer_placeholder = st.empty()
-
  while time.time() < end_time:
     remaining_time = int(end_time - time.time())
     days, remainder1 = divmod(remaining_time, 86400)
