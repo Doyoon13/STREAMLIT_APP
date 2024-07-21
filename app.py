@@ -26,4 +26,4 @@ with col2:
 
 title_placeholder = st.empty()
 
-Timer_placeholder = st.empty()
+timer_placeholder = st.empty()
