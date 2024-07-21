@@ -9,7 +9,7 @@ def countdown(duration_days, duration_hours, duration_minutes):
 
 timer_placeholder = st.empty()
 
-while time.time() < end_time:
+ while time.time() < end_time:
     remaining_time = int(end_time - time.time())
     days, remainder1 = divmod(remaining_time, 86400)
     hours, remainder2 = divmod(remainder1, 3600)
