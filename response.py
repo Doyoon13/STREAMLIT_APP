@@ -1,7 +1,7 @@
 import time
 import streamlit as st
 
-timer_placeholder = st.empty()
+
 def countdown(duration_days, duration_hours, duration_minutes):
  total_seconds = duration_days * 86400 + duration_hours * 3600 + duration_minutes * 60
  start_time = time.time()
@@ -20,4 +20,4 @@ def countdown(duration_days, duration_hours, duration_minutes):
 audio_path = 'mixkit-vintage-warning-alarm-990.wav'
 st.audio(audio_path, autoplay = True)
 timer_placeholder.title("Time's up!")
-  
+timer_placeholder = st.empty()  
