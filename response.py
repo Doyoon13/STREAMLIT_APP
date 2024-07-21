@@ -18,7 +18,7 @@ def countdown(duration_days, duration_hours, duration_minutes):
     timer = '{:02d}:{:02d}:{:02d}:{:02d}'.format(days,hours, mins, secs)
 
     timer_placeholder.title(timer)
-
+    time.sleep(0)
     time.sleep(1)
 
   audio_path = 'mixkit-vintage-warning-alarm-990.wav'
