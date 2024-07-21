@@ -23,5 +23,5 @@ def countdown(duration_days, duration_hours, duration_minutes):
 
 audio_path = 'mixkit-vintage-warning-alarm-990.wav'
 st.audio(audio_path, autoplay = True)
-Timer_placeholder.title("Time's up!")
+timer_placeholder.title("Time's up!")
   
