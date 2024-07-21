@@ -8,7 +8,7 @@ def countdown(duration_days, duration_hours, duration_minutes):
   start_time = time.time()
   end_time = start_time + total_seconds
 
-  timer_placeholder = st.empty()
+timer_placeholder = st.empty()
 
   while time.time() < end_time:
     remaining_time = int(end_time - time.time())
