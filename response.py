@@ -22,13 +22,13 @@ def countdown(duration_days, duration_hours, duration_minutes):
     time.sleep(1)
 if days < 0:
     print("You can not go to the past")
-  elif hours < 0:
-     print("You can not go to the past")
-  elif minutes < 0:
-     print("You can not go to the past")
+    elif hours < 0:
+      print("You can not go to the past")
+    elif minutes < 0:
+      print("You can not go to the past")
   
-  else: 
-     audio_path = 'mixkit-vintage-warning-alarm-990.wav'
-     st.audio(audio_path, autoplay = True)
-     timer_placeholder.title("Time's up!")
+    else: 
+      audio_path = 'mixkit-vintage-warning-alarm-990.wav'
+      st.audio(audio_path, autoplay = True)
+      timer_placeholder.title("Time's up!")
   
