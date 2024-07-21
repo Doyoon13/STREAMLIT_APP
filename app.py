@@ -16,12 +16,7 @@ col1, col2 = st.columns(2)
 
 with col1:
   if st.button('Start Timer'):
-   if days < 0:
-    print("You can not go to the past")
-   if hours < 0:
-    print("You can not go to the past")
-   if minutes < 0:
-    print("You can not go to the past")
+
    countdown(days,hours,minutes)
     
 with col2:
